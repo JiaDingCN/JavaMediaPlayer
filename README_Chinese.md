@@ -2,8 +2,8 @@
 
 本项目是基于项目https://github.com/Al-assad/Simple-Media-Player进行修改的，向原作者的工作致敬
 ## 功能介绍
-![本地视频播放](http://markdown.xiaoshujiang.com/c63c1f80-8323-4875-bc9b-274752f512ce)
-![在线视频播放](http://markdown.xiaoshujiang.com/75682adf-2e82-419b-9053-9d6cce56a886)
+![本地视频播放](blob:http://markdown.xiaoshujiang.com/c63c1f80-8323-4875-bc9b-274752f512ce)
+![在线视频播放](blob:http://markdown.xiaoshujiang.com/75682adf-2e82-419b-9053-9d6cce56a886)
 
 ## 项目介绍
 基于Oracle JDK1.8 ,使用JavaFX开发，调用JavaFX 内置的MediaPlayer播放使用。
