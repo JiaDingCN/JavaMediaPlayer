@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jiading.controller.Controller_mainPanel">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="202.0" fitWidth="232.0" layoutX="184.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0" AnchorPane.topAnchor="99.0" />
+      <MenuBar fx:id="menu" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="600.0" styleClass="menubar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu id="menubar1" mnemonicParsing="false" styleClass="menubar" text="操作">
+               <items>
+                  <MenuItem fx:id="openNewLocalMp4Item" mnemonicParsing="false" onAction="#openNewLocalMp4" styleClass="menuItem" text="打开新的本地mp4视频" />
+                  <MenuItem mnemonicParsing="false" onAction="#openStream" styleClass="menuItem" text="打开新的网络串流" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#stopAction" styleClass="menuItem" text="关闭当前视频" />
+                  <MenuItem mnemonicParsing="false" onAction="#setting" styleClass="menuItem" text="设置" />
+                  <MenuItem fx:id="exitItem" mnemonicParsing="false" onAction="#exit" styleClass="menuItem" text="退出" />
+               </items>
+            </Menu>
+            <Menu id="menubar2" mnemonicParsing="false" styleClass="menubar" text="关于">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="关于" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <MediaView fx:id="playView" styleClass="mediaView" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+      <BorderPane fx:id="controlBorderPane" layoutY="350.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="600.0" styleClass="bottompanel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="playBT" mnemonicParsing="false" onMouseClicked="#play" styleClass="button" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="stopBT" mnemonicParsing="false" onMouseClicked="#stop" styleClass="button" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </center>
+         <left>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="270" spacing="5.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Button fx:id="maxBT" mnemonicParsing="false" onMouseClicked="#setMaximizeButton" styleClass="button" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="timeLB" prefWidth="100.0" styleClass="label" text="Time" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                  <Slider fx:id="processSD" prefWidth="130" />
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </left>
+         <right>
+            <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="volumeBT" mnemonicParsing="false" onMouseClicked="#changeMute" styleClass="button" HBox.hgrow="ALWAYS" />
+                  <Slider fx:id="volumeSD" minHeight="-Infinity" prefWidth="150.0" styleClass="slider" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

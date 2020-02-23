@@ -1,0 +1,42 @@
+.menuItem{
+    -fx-font-family: "Ubuntu";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+.button {
+    -fx-background-color: #707da8;
+    -fx-font-family: "Ubuntu";
+    -fx-font-size: 15;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+}
+.imageView{
+    -fx-background-color: #707da8;
+}
+
+.label {
+    -fx-font-family: "Ubuntu";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+.menubar {
+    -fx-font-family:"Ubuntu";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-background-color: #707da8;
+}
+
+.bottompanel {
+    -fx-background-color: #707da8;
+}
+.slider{
+
+}
+.mediaView{
+    -fx-background-color: #707da8;
+}
+#menubar1{
+}
+#menubar2{
+}
+

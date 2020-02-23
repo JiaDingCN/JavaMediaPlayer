@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="154.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jiading.controller.Controller_reallyCLear" stylesheets="main.css">
+   <children>
+      <Button styleClass="button" fx:id="cancelButton" layoutX="271.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#exit" text="取消" />
+      <Label styleClass="label" layoutX="72.0" layoutY="34.0" text="您真的要清除当前列表吗？这是不可撤销的。" />
+      <Button styleClass="button" fx:id="okButton" layoutX="192.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#clear" text="确定" />
+   </children>
+</AnchorPane>
