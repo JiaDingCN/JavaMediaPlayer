@@ -1,7 +1,7 @@
 # JavaMediaPlayer
 A desktop version simple media player using JavaFX,cross platform
 
-中文README文档看这里:https://github.com/JiaDingCN/JavaMediaPlayer/blob/master/README_Chinese
+中文README文档看这里:https://github.com/JiaDingCN/JavaMediaPlayer/blob/master/README_Chinese.md
 
 This project is based on https://github.com/Al-assad/Simple-Media-Player .Thanks the author.
 
