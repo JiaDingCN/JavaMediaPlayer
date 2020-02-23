@@ -4,8 +4,12 @@
 ## 功能介绍
 
 ![本地视频播放](https://user-images.githubusercontent.com/36098426/75112628-968f5580-5680-11ea-9d90-b7e0b68976a4.png)
+
+本地视频播放
+
 ![在线视频播放](https://user-images.githubusercontent.com/36098426/75112629-97c08280-5680-11ea-9cc9-2d4c0a8d3e6c.png)
 
+在线视频播放
 
 ## 项目介绍
 基于Oracle JDK1.8 ,使用JavaFX开发，调用JavaFX 内置的MediaPlayer播放使用。
